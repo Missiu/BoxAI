@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/School/三下/实训2/boxai-backend/src</OriginalElement>
+  <nodes>
+    <node x="5284.0" y="3202.5">com.boxai.BoxaiApplicationTests</node>
+    <node x="6549.0" y="2554.0">com.boxai.common.base.HttpStatus</node>
+    <node x="4140.5" y="6450.5">com.boxai.config.mybatisplus.MyBatisPlusConfig</node>
+    <node x="6162.5" y="5464.5">com.boxai.service.impl.UsersServiceImpl</node>
+    <node x="1970.0" y="6374.5">com.boxai.model.dto.postlike.LikeAddDTO</node>
+    <node x="1835.5" y="5474.5">com.boxai.config.bean.SpringContextHolder</node>
+    <node x="3545.0" y="2458.5">com.boxai.common.base.ReturnCode</node>
+    <node x="6630.0" y="5576.5">com.boxai.config.scheduled.repository.DataChartsRepository</node>
+    <node x="3292.0" y="5550.5">com.boxai.service.impl.PostLikesServiceImpl</node>
+    <node x="1721.5" y="2554.0">com.boxai.service.PostCommentsService</node>
+    <node x="3459.0" y="6426.5">com.boxai.utils.encrypt.EncryptPasswordUtil</node>
+    <node x="4410.0" y="4002.5">com.boxai.model.entity.PostFavorites</node>
+    <node x="1685.0" y="3666.5">com.boxai.model.entity.DataCharts</node>
+    <node x="255.0" y="1126.5">com.boxai.common.base.R</node>
+    <node x="1473.0" y="2536.5">com.boxai.controller.CommentController</node>
+    <node x="4746.0" y="3216.5">com.boxai.model.dto.postcomment.CommentUpdateDTO</node>
+    <node x="-147.0" y="1962.5">com.boxai.config.Interceptor.token.TokenInterceptorHandler</node>
+    <node x="6601.5" y="6402.5">com.boxai.utils.dataclean.DataClean</node>
+    <node x="5970.0" y="3138.5">com.boxai.model.dto.user.UserDeleteDTO</node>
+    <node x="4140.0" y="3810.5">com.boxai.model.vo.postfavorite.PostFavorListQueryVO</node>
+    <node x="2830.0" y="3906.5">com.boxai.model.entity.Posts</node>
+    <node x="4140.0" y="3190.5">com.boxai.config.threadpool.ThreadPoolExecutorConfig</node>
+    <node x="4985.5" y="5576.5">com.boxai.config.scheduled.repository.UsersRepository</node>
+    <node x="1006.5" y="2536.5">com.boxai.model.dto.post.PostUpdateDTO</node>
+    <node x="2459.0" y="6476.5">com.boxai.mapper.PostLikesMapper</node>
+    <node x="2842.0" y="6318.5">com.boxai.service.impl.DataChartsServiceImpl</node>
+    <node x="-58.5" y="2150.5">com.boxai.config.Interceptor.TokenHandlerConfig</node>
+    <node x="1990.0" y="4050.5">com.boxai.utils.chat.Message</node>
+    <node x="3890.0" y="6350.5">com.boxai.model.dto.datachart.ChartCreatTextDTO</node>
+    <node x="6220.0" y="2994.5">com.boxai.model.dto.post.PostQueryDTO</node>
+    <node x="2005.5" y="3078.5">com.boxai.exception.customize.CustomizeLockException</node>
+    <node x="4651.0" y="4062.5">com.boxai.model.dto.datachart.ChartCreateDTO</node>
+    <node x="2210.0" y="6374.5">com.boxai.model.dto.postfavorite.FavoriteAddDTO</node>
+    <node x="5555.0" y="5454.5">com.boxai.controller.DataChartController</node>
+    <node x="975.5" y="6378.5">com.boxai.exception.GlobalExceptionHandler</node>
+    <node x="5810.0" y="6374.5">com.boxai.model.dto.postfavorite.FavoriteDeleteDTO</node>
+    <node x="405.5" y="3176.5">com.boxai.utils.threadlocal.UserHolder</node>
+    <node x="1355.0" y="5538.5">com.boxai.service.impl.PostsServiceImpl</node>
+    <node x="425.0" y="130.5">com.boxai.model.dto.datachart.ChartUpdateDTO</node>
+    <node x="2381.5" y="3234.0">com.boxai.mapper.PostCommentsMapper</node>
+    <node x="6307.0" y="6350.5">com.boxai.model.dto.user.UserUpdatePasswordDTO</node>
+    <node x="10.0" y="6350.5">com.boxai.model.dto.user.UserQueryDTO</node>
+    <node x="-150.0" y="3162.5">com.boxai.common.enumerate.UserEnum.UserStatusEnum</node>
+    <node x="4489.0" y="5466.5">com.boxai.controller.UserController</node>
+    <node x="5238.0" y="2314.5">com.boxai.config.redisson.properties.RedissonProperties</node>
+    <node x="6249.0" y="4150.5">com.boxai.utils.file.FileUtils</node>
+    <node x="2650.0" y="3138.5">com.boxai.model.dto.post.PostDeleteDTO</node>
+    <node x="140.5" y="3190.5">com.boxai.config.redisson.RedissonConfig</node>
+    <node x="2826.5" y="5550.5">com.boxai.controller.FavoriteController</node>
+    <node x="129.0" y="2536.5">com.boxai.common.enumerate.UserEnum</node>
+    <node x="535.0" y="4152.5">com.boxai.service.PostsService</node>
+    <node x="4060.0" y="5538.5">com.boxai.service.impl.PostFavoritesServiceImpl</node>
+    <node x="5451.0" y="4104.5">com.boxai.mapper.PostsMapper</node>
+    <node x="6728.5" y="2482.5">com.boxai.common.enumerate.AIGCEnum</node>
+    <node x="3315.5" y="2554.0">com.boxai.common.constants.DataCleanConstant</node>
+    <node x="160.0" y="130.5">com.boxai.model.vo.postlike.PostLikeListQueryVO</node>
+    <node x="6079.0" y="2554.0">com.boxai.common.constants.RedisKeyConstant</node>
+    <node x="2185.0" y="4994.5">com.boxai.model.vo.datachart.UniversalDataChartsVO</node>
+    <node x="1450.0" y="3126.5">com.boxai.model.dto.datachart.ChartDeleteDTO</node>
+    <node x="6050.0" y="6326.5">com.boxai.model.dto.datachart.ChartQueryDTO</node>
+    <node x="5600.0" y="2554.0">com.boxai.common.constants.CommonConstant</node>
+    <node x="-131.0" y="2536.5">com.boxai.model.dto.postcomment.CommentDeleteDTO</node>
+    <node x="4930.0" y="4074.5">com.boxai.model.dto.user.UserLoginDTO</node>
+    <node x="1541.0" y="6438.5">com.boxai.config.swagger.SwaggerConfig</node>
+    <node x="1231.0" y="2536.5">com.boxai.model.dto.postcomment.CommentQueryDTO</node>
+    <node x="6318.0" y="2536.5">com.boxai.model.dto.postcomment.CommentAddDTO</node>
+    <node x="6944.5" y="6362.5">com.boxai.model.dto.post.PostAddDTO</node>
+    <node x="5018.0" y="3162.5">com.boxai.common.enumerate.FileTypeEnum</node>
+    <node x="730.0" y="6374.5">com.boxai.model.dto.postlike.LikeDeleteDTO</node>
+    <node x="3133.0" y="3190.5">com.boxai.config.cors.CorsConfig</node>
+    <node x="2492.5" y="5562.5">com.boxai.controller.LikeController</node>
+    <node x="-17.0" y="1114.5">com.boxai.model.vo.user.UserInfoVO</node>
+    <node x="490.0" y="6338.5">com.boxai.model.page.PageModel</node>
+    <node x="5026.0" y="6476.5">com.boxai.mapper.PostFavoritesMapper</node>
+    <node x="5538.0" y="2934.5">com.boxai.config.redisson.properties.RedissonProperties.SingleServerConfig</node>
+    <node x="1705.0" y="3216.5">com.boxai.service.impl.PostCommentsServiceImpl</node>
+    <node x="3615.5" y="5404.5">com.boxai.utils.chat.MoonshotAiUtils</node>
+    <node x="4770.0" y="6350.5">com.boxai.model.dto.user.UserUpdateDTO</node>
+    <node x="5782.5" y="4078.5">com.boxai.service.UsersService</node>
+    <node x="5183.0" y="3810.5">com.boxai.model.entity.Users</node>
+    <node x="476.5" y="5538.5">com.boxai.service.impl.SaveDataService</node>
+    <node x="6489.5" y="3078.5">com.boxai.exception.customize.CustomizeFileException</node>
+    <node x="6582.0" y="4068.5">com.boxai.service.DataChartsService</node>
+    <node x="3463.5" y="3078.5">com.boxai.exception.customize.CustomizeTransactionException</node>
+    <node x="2890.0" y="3138.5">com.boxai.model.dto.postfavorite.FavoriteQueryDTO</node>
+    <node x="4490.0" y="3138.5">com.boxai.model.dto.user.UserUpdateKeyDTO</node>
+    <node x="1382.0" y="4138.5">com.boxai.utils.rateLimit.RateLimitUtils</node>
+    <node x="6985.5" y="2522.5">com.boxai.BoxaiApplication</node>
+    <node x="5450.0" y="6414.5">com.boxai.utils.json.JsonUtil</node>
+    <node x="4531.5" y="6450.5">com.boxai.config.scheduled.HardDeleteTask</node>
+    <node x="930.0" y="2994.5">com.boxai.model.entity.PostComments</node>
+    <node x="654.5" y="3162.5">com.boxai.common.enumerate.UserEnum.UserTypeEnum</node>
+    <node x="1178.5" y="3162.5">com.boxai.common.enumerate.UserEnum.UserSexEnum</node>
+    <node x="-135.0" y="-13.5">com.boxai.model.vo.datachart.ChartQueryVO</node>
+    <node x="6853.5" y="3138.5">com.boxai.common.enumerate.AIGCEnum.CodeKey</node>
+    <node x="-38.5" y="5538.5">com.boxai.controller.PostController</node>
+    <node x="5829.0" y="2554.0">com.boxai.common.constants.MoonshotAiConstant</node>
+    <node x="91.5" y="4020.5">com.boxai.mapper.DataChartsMapper</node>
+    <node x="2232.0" y="4164.5">com.boxai.service.PostLikesService</node>
+    <node x="1072.0" y="5526.5">com.boxai.utils.chat.Message.MessageBuilder</node>
+    <node x="2560.0" y="3810.5">com.boxai.model.vo.post.PostListQueryVO</node>
+    <node x="3760.5" y="4038.5">com.boxai.exception.customize.CustomizeReturnException</node>
+    <node x="250.0" y="6350.5">com.boxai.model.dto.user.UserRegisterDTO</node>
+    <node x="3890.0" y="3138.5">com.boxai.model.dto.postlike.LikeQueryDTO</node>
+    <node x="1013.5" y="4068.5">com.boxai.mapper.UsersMapper</node>
+    <node x="3510.0" y="4002.5">com.boxai.model.entity.PostLikes</node>
+    <node x="3080.0" y="4152.5">com.boxai.service.PostFavoritesService</node>
+    <node x="-145.0" y="4124.5">com.boxai.utils.chat.MoonshotAiPrompt</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.boxai.common.enumerate.UserEnum.UserSexEnum" target="com.boxai.common.enumerate.UserEnum" relationship="INNER_CLASS">
+      <point x="0.0" y="-85.5" />
+      <point x="1295.0" y="2968.0" />
+      <point x="195.0" y="2968.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.boxai.config.scheduled.HardDeleteTask" target="com.boxai.config.scheduled.repository.UsersRepository" relationship="TO_ONE">
+      <point x="0.0" y="-57.5" />
+      <point x="4635.0" y="6328.0" />
+      <point x="5255.0" y="6328.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.service.UsersService" relationship="TO_ONE">
+      <point x="146.66666666666669" y="-69.5" />
+      <point x="1721.666666666667" y="4948.0" />
+      <point x="5455.0" y="4948.0" />
+      <point x="5455.0" y="4928.0" />
+      <point x="5415.0" y="4928.0" />
+      <point x="5415.0" y="4648.0" />
+      <point x="5886.666666666667" y="4648.0" />
+      <point x="-108.33333333333303" y="129.5" />
+    </edge>
+    <edge source="com.boxai.config.Interceptor.token.TokenInterceptorHandler" target="com.boxai.model.vo.user.UserInfoVO" relationship="CREATE">
+      <point x="0.0" y="-45.5" />
+      <point x="0.0" y="373.5" />
+    </edge>
+    <edge source="com.boxai.exception.customize.CustomizeLockException" target="com.boxai.common.base.ReturnCode" relationship="TO_ONE">
+      <point x="0.0" y="-169.5" />
+      <point x="2175.0" y="2908.0" />
+      <point x="3655.0" y="2908.0" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostCommentsServiceImpl" target="com.boxai.service.PostCommentsService" relationship="REALIZATION">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="1575.0" y="4968.0" />
+      <point x="2675.0" y="4968.0" />
+      <point x="2675.0" y="4868.0" />
+      <point x="3595.0" y="4868.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.config.redisson.properties.RedissonProperties.SingleServerConfig" target="com.boxai.config.redisson.properties.RedissonProperties" relationship="INNER_CLASS">
+      <point x="100.0" y="-313.5" />
+      <point x="5835.0" y="2848.0" />
+      <point x="5499.666666666667" y="2848.0" />
+      <point x="104.66666666666697" y="253.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.UsersServiceImpl" target="com.boxai.model.dto.user.UserLoginDTO" relationship="CREATE">
+      <point x="-106.25" y="-143.5" />
+      <point x="6268.75" y="5368.0" />
+      <point x="5295.0" y="5368.0" />
+      <point x="5295.0" y="4628.0" />
+      <point x="5035.0" y="4628.0" />
+      <point x="0.0" y="133.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.service.DataChartsService" relationship="TO_ONE">
+      <point x="146.66666666666669" y="-69.5" />
+      <point x="1721.666666666667" y="4948.0" />
+      <point x="5455.0" y="4948.0" />
+      <point x="5455.0" y="4908.0" />
+      <point x="5975.0" y="4908.0" />
+      <point x="5975.0" y="4368.0" />
+      <point x="6726.333333333333" y="4368.0" />
+      <point x="-148.66666666666697" y="139.5" />
+    </edge>
+    <edge source="com.boxai.config.redisson.RedissonConfig" target="com.boxai.config.redisson.properties.RedissonProperties" relationship="TO_ONE">
+      <point x="0.0" y="-57.5" />
+      <point x="255.0" y="2948.0" />
+      <point x="1675.0" y="2948.0" />
+      <point x="1675.0" y="2848.0" />
+      <point x="5290.333333333333" y="2848.0" />
+      <point x="-104.66666666666697" y="253.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.config.bean.SpringContextHolder" relationship="TO_ONE">
+      <point x="-195.33333333333348" y="-189.5" />
+      <point x="2939.6666666666665" y="6288.0" />
+      <point x="755.0" y="6288.0" />
+      <point x="755.0" y="5768.0" />
+      <point x="1995.0" y="5768.0" />
+      <point x="0.0" y="133.5" />
+    </edge>
+    <edge source="com.boxai.controller.DataChartController" target="com.boxai.service.DataChartsService" relationship="TO_ONE">
+      <point x="140.0" y="-153.5" />
+      <point x="5975.0" y="4368.0" />
+      <point x="6726.333333333333" y="4368.0" />
+      <point x="-148.66666666666697" y="139.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.service.PostsService" relationship="REALIZATION">
+      <point x="-146.66666666666669" y="-69.5" />
+      <point x="1428.3333333333333" y="5488.0" />
+      <point x="875.0" y="5488.0" />
+      <point x="120.0" y="55.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.utils.rateLimit.RateLimitUtils" relationship="TO_ONE">
+      <point x="-195.33333333333348" y="-189.5" />
+      <point x="2939.6666666666665" y="6288.0" />
+      <point x="755.0" y="6288.0" />
+      <point x="755.0" y="5768.0" />
+      <point x="1055.0" y="5768.0" />
+      <point x="1055.0" y="4488.0" />
+      <point x="1515.0" y="4488.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.exception.customize.CustomizeTransactionException" relationship="CREATE">
+      <point x="139.0" y="-69.5" />
+      <point x="894.0" y="5508.0" />
+      <point x="1815.0" y="5508.0" />
+      <point x="1815.0" y="4788.0" />
+      <point x="1975.0" y="4788.0" />
+      <point x="1975.0" y="3648.0" />
+      <point x="3055.0" y="3648.0" />
+      <point x="3055.0" y="3448.0" />
+      <point x="3655.0" y="3448.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.exception.customize.CustomizeTransactionException" target="com.boxai.common.base.ReturnCode" relationship="TO_ONE">
+      <point x="0.0" y="-169.5" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.UsersServiceImpl" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="-106.25" y="-143.5" />
+      <point x="6268.75" y="5368.0" />
+      <point x="5295.0" y="5368.0" />
+      <point x="5295.0" y="4648.0" />
+      <point x="3595.0" y="4648.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.UsersServiceImpl" target="com.boxai.model.entity.Users" relationship="CREATE">
+      <point x="-106.25" y="-143.5" />
+      <point x="6268.75" y="5368.0" />
+      <point x="5295.0" y="5368.0" />
+      <point x="0.0" y="397.5" />
+    </edge>
+    <edge source="com.boxai.exception.customize.CustomizeReturnException" target="com.boxai.common.base.ReturnCode" relationship="TO_ONE">
+      <point x="0.0" y="-169.5" />
+      <point x="3935.0" y="3628.0" />
+      <point x="4995.0" y="3628.0" />
+      <point x="4995.0" y="2908.0" />
+      <point x="3655.0" y="2908.0" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.service.DataChartsService" relationship="REALIZATION">
+      <point x="195.33333333333348" y="-189.5" />
+      <point x="3330.3333333333335" y="6268.0" />
+      <point x="7215.0" y="6268.0" />
+      <point x="7215.0" y="5548.0" />
+      <point x="7015.0" y="5548.0" />
+      <point x="140.0" y="139.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostLikesServiceImpl" target="com.boxai.service.PostLikesService" relationship="REALIZATION">
+      <point x="-95.33333333333348" y="-57.5" />
+      <point x="3339.6666666666665" y="4888.0" />
+      <point x="2455.0" y="4888.0" />
+      <point x="80.0" y="43.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.exception.customize.CustomizeTransactionException" relationship="CREATE">
+      <point x="0.0" y="-189.5" />
+      <point x="3135.0" y="6248.0" />
+      <point x="2795.0" y="6248.0" />
+      <point x="2795.0" y="4908.0" />
+      <point x="3055.0" y="4908.0" />
+      <point x="3055.0" y="3448.0" />
+      <point x="3655.0" y="3448.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.utils.chat.Message.MessageBuilder" target="com.boxai.utils.chat.Message" relationship="INNER_CLASS">
+      <point x="0.0" y="-81.5" />
+      <point x="1195.0" y="4768.0" />
+      <point x="2155.0" y="4768.0" />
+      <point x="60.0" y="157.5" />
+    </edge>
+    <edge source="com.boxai.controller.FavoriteController" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="104.25" y="-57.5" />
+      <point x="3139.25" y="5368.0" />
+      <point x="3595.0" y="5368.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.UsersServiceImpl" target="com.boxai.service.UsersService" relationship="REALIZATION">
+      <point x="106.25" y="-143.5" />
+      <point x="6481.25" y="5348.0" />
+      <point x="6095.0" y="5348.0" />
+      <point x="100.0" y="129.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.mapper.UsersMapper" relationship="TO_ONE">
+      <point x="-195.33333333333348" y="-189.5" />
+      <point x="2939.6666666666665" y="6288.0" />
+      <point x="755.0" y="6288.0" />
+      <point x="755.0" y="5768.0" />
+      <point x="455.0" y="5768.0" />
+      <point x="455.0" y="4428.0" />
+      <point x="1175.0" y="4428.0" />
+      <point x="0.0" y="139.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="4255.0" y="4688.0" />
+      <point x="3595.0" y="4688.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="0.0" y="-189.5" />
+      <point x="3135.0" y="6248.0" />
+      <point x="3595.0" y="6248.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostLikesServiceImpl" target="com.boxai.service.DataChartsService" relationship="TO_ONE">
+      <point x="95.33333333333348" y="-57.5" />
+      <point x="3530.3333333333335" y="5388.0" />
+      <point x="5335.0" y="5388.0" />
+      <point x="5335.0" y="4748.0" />
+      <point x="5975.0" y="4748.0" />
+      <point x="5975.0" y="4368.0" />
+      <point x="6726.333333333333" y="4368.0" />
+      <point x="-148.66666666666697" y="139.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.model.entity.PostFavorites" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="4255.0" y="4928.0" />
+      <point x="4515.0" y="4928.0" />
+      <point x="0.0" y="205.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.utils.chat.MoonshotAiPrompt" relationship="TO_ONE">
+      <point x="-195.33333333333348" y="-189.5" />
+      <point x="2939.6666666666665" y="6288.0" />
+      <point x="755.0" y="6288.0" />
+      <point x="755.0" y="5768.0" />
+      <point x="-65.0" y="5768.0" />
+      <point x="-65.0" y="5528.0" />
+      <point x="-45.0" y="5528.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="com.boxai.common.enumerate.UserEnum.UserStatusEnum" target="com.boxai.common.enumerate.UserEnum" relationship="INNER_CLASS">
+      <point x="0.0" y="-85.5" />
+      <point x="-25.0" y="2968.0" />
+      <point x="195.0" y="2968.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.mapper.PostsMapper" relationship="TO_ONE">
+      <point x="130.0" y="-69.5" />
+      <point x="4385.0" y="5448.0" />
+      <point x="5375.0" y="5448.0" />
+      <point x="5375.0" y="4628.0" />
+      <point x="5595.0" y="4628.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.mapper.DataChartsMapper" relationship="TO_ONE">
+      <point x="-140.0" y="-69.5" />
+      <point x="615.0" y="4988.0" />
+      <point x="295.0" y="5488.0" />
+      <point x="0.0" y="187.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="139.0" y="-69.5" />
+      <point x="894.0" y="5508.0" />
+      <point x="1815.0" y="5508.0" />
+      <point x="1815.0" y="4808.0" />
+      <point x="3595.0" y="4808.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.common.enumerate.UserEnum.UserTypeEnum" target="com.boxai.common.enumerate.UserEnum" relationship="INNER_CLASS">
+      <point x="0.0" y="-85.5" />
+      <point x="775.0" y="2968.0" />
+      <point x="195.0" y="2968.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.UsersServiceImpl" target="com.boxai.exception.customize.CustomizeTransactionException" relationship="CREATE">
+      <point x="-106.25" y="-143.5" />
+      <point x="6268.75" y="5368.0" />
+      <point x="5295.0" y="5368.0" />
+      <point x="5295.0" y="4628.0" />
+      <point x="5155.0" y="4628.0" />
+      <point x="5155.0" y="3648.0" />
+      <point x="3055.0" y="3648.0" />
+      <point x="3055.0" y="3448.0" />
+      <point x="3655.0" y="3448.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.controller.DataChartController" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="-140.0" y="-153.5" />
+      <point x="5695.0" y="5348.0" />
+      <point x="4775.0" y="5348.0" />
+      <point x="4775.0" y="4668.0" />
+      <point x="3595.0" y="4668.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.utils.file.FileUtils" target="com.boxai.exception.customize.CustomizeFileException" relationship="CREATE">
+      <point x="0.0" y="-57.5" />
+      <point x="6395.0" y="4048.0" />
+      <point x="6655.0" y="4048.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.utils.chat.Message" relationship="CREATE">
+      <point x="139.0" y="-69.5" />
+      <point x="894.0" y="5508.0" />
+      <point x="1815.0" y="5508.0" />
+      <point x="1815.0" y="4788.0" />
+      <point x="2035.0" y="4788.0" />
+      <point x="-60.0" y="157.5" />
+    </edge>
+    <edge source="com.boxai.controller.LikeController" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="71.25" y="-45.5" />
+      <point x="2706.25" y="5368.0" />
+      <point x="3595.0" y="5368.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.exception.customize.CustomizeFileException" target="com.boxai.common.base.ReturnCode" relationship="TO_ONE">
+      <point x="0.0" y="-169.5" />
+      <point x="6655.0" y="2908.0" />
+      <point x="3655.0" y="2908.0" />
+      <point x="0.0" y="109.5" />
+    </edge>
+    <edge source="com.boxai.common.enumerate.AIGCEnum.CodeKey" target="com.boxai.common.enumerate.AIGCEnum" relationship="INNER_CLASS">
+      <point x="0.0" y="-109.5" />
+      <point x="6955.0" y="3068.0" />
+      <point x="6835.0" y="3068.0" />
+      <point x="0.0" y="85.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.service.impl.SaveDataService" relationship="TO_ONE">
+      <point x="-195.33333333333348" y="-189.5" />
+      <point x="2939.6666666666665" y="6288.0" />
+      <point x="755.0" y="6288.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="com.boxai.controller.FavoriteController" target="com.boxai.service.PostFavoritesService" relationship="TO_ONE">
+      <point x="-104.25" y="-57.5" />
+      <point x="2930.75" y="4928.0" />
+      <point x="3375.0" y="4928.0" />
+      <point x="100.0" y="55.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.service.PostFavoritesService" relationship="REALIZATION">
+      <point x="-130.0" y="-69.5" />
+      <point x="4125.0" y="4828.0" />
+      <point x="3175.0" y="4828.0" />
+      <point x="-100.0" y="55.5" />
+    </edge>
+    <edge source="com.boxai.utils.rateLimit.RateLimitUtils" target="com.boxai.config.redisson.RedissonConfig" relationship="TO_ONE">
+      <point x="-60.0" y="-69.5" />
+      <point x="1455.0" y="3528.0" />
+      <point x="255.0" y="3528.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="com.boxai.config.redisson.properties.RedissonProperties" target="com.boxai.config.redisson.properties.RedissonProperties.SingleServerConfig" relationship="TO_ONE">
+      <point x="0.0" y="253.5" />
+      <point x="5395.0" y="2888.0" />
+      <point x="5635.0" y="2888.0" />
+      <point x="-100.0" y="-313.5" />
+    </edge>
+    <edge source="com.boxai.utils.rateLimit.RateLimitUtils" target="com.boxai.config.redisson.properties.RedissonProperties" relationship="TO_ONE">
+      <point x="-60.0" y="-69.5" />
+      <point x="1455.0" y="3528.0" />
+      <point x="1675.0" y="3528.0" />
+      <point x="1675.0" y="2848.0" />
+      <point x="5290.333333333333" y="2848.0" />
+      <point x="-104.66666666666697" y="253.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.utils.chat.MoonshotAiPrompt" relationship="TO_ONE">
+      <point x="-140.0" y="-69.5" />
+      <point x="615.0" y="5508.0" />
+      <point x="-45.0" y="5508.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.model.vo.postfavorite.PostFavorListQueryVO" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="0.0" y="397.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.mapper.UsersMapper" relationship="TO_ONE">
+      <point x="-140.0" y="-69.5" />
+      <point x="615.0" y="4448.0" />
+      <point x="1175.0" y="4448.0" />
+      <point x="0.0" y="139.5" />
+    </edge>
+    <edge source="com.boxai.config.scheduled.HardDeleteTask" target="com.boxai.config.scheduled.repository.DataChartsRepository" relationship="TO_ONE">
+      <point x="0.0" y="-57.5" />
+      <point x="4635.0" y="6328.0" />
+      <point x="5255.0" y="6328.0" />
+      <point x="5255.0" y="6308.0" />
+      <point x="6915.0" y="6308.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.service.UsersService" relationship="TO_ONE">
+      <point x="130.0" y="-69.5" />
+      <point x="4385.0" y="5448.0" />
+      <point x="5375.0" y="5448.0" />
+      <point x="5375.0" y="4728.0" />
+      <point x="5415.0" y="4728.0" />
+      <point x="5415.0" y="4648.0" />
+      <point x="5886.666666666667" y="4648.0" />
+      <point x="-108.33333333333303" y="129.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.model.entity.Posts" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="1575.0" y="4968.0" />
+      <point x="2675.0" y="4968.0" />
+      <point x="2675.0" y="4848.0" />
+      <point x="2935.0" y="4848.0" />
+      <point x="0.0" y="301.5" />
+    </edge>
+    <edge source="com.boxai.controller.DataChartController" target="com.boxai.model.dto.datachart.ChartCreateDTO" relationship="CREATE">
+      <point x="-140.0" y="-153.5" />
+      <point x="5695.0" y="5348.0" />
+      <point x="4775.0" y="5348.0" />
+      <point x="0.0" y="145.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostsServiceImpl" target="com.boxai.model.vo.post.PostListQueryVO" relationship="CREATE">
+      <point x="0.0" y="-69.5" />
+      <point x="1575.0" y="4968.0" />
+      <point x="2675.0" y="4968.0" />
+      <point x="0.0" y="397.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostLikesServiceImpl" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="0.0" y="-57.5" />
+      <point x="3435.0" y="4928.0" />
+      <point x="3595.0" y="4928.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.controller.PostController" target="com.boxai.service.PostsService" relationship="TO_ONE">
+      <point x="0.0" y="-69.5" />
+      <point x="195.0" y="4408.0" />
+      <point x="635.0" y="4408.0" />
+      <point x="-120.0" y="55.5" />
+    </edge>
+    <edge source="com.boxai.utils.rateLimit.RateLimitUtils" target="com.boxai.exception.customize.CustomizeTransactionException" relationship="CREATE">
+      <point x="60.0" y="-69.5" />
+      <point x="1575.0" y="3648.0" />
+      <point x="3055.0" y="3648.0" />
+      <point x="3055.0" y="3448.0" />
+      <point x="3655.0" y="3448.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.utils.rateLimit.RateLimitUtils" relationship="TO_ONE">
+      <point x="-140.0" y="-69.5" />
+      <point x="615.0" y="4468.0" />
+      <point x="1515.0" y="4468.0" />
+      <point x="0.0" y="69.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostFavoritesServiceImpl" target="com.boxai.service.DataChartsService" relationship="TO_ONE">
+      <point x="130.0" y="-69.5" />
+      <point x="4385.0" y="5448.0" />
+      <point x="5375.0" y="5448.0" />
+      <point x="5375.0" y="4888.0" />
+      <point x="5975.0" y="4888.0" />
+      <point x="5975.0" y="4368.0" />
+      <point x="6726.333333333333" y="4368.0" />
+      <point x="-148.66666666666697" y="139.5" />
+    </edge>
+    <edge source="com.boxai.utils.chat.MoonshotAiUtils" target="com.boxai.exception.customize.CustomizeReturnException" relationship="CREATE">
+      <point x="0.0" y="-203.5" />
+      <point x="3815.0" y="5368.0" />
+      <point x="3595.0" y="5368.0" />
+      <point x="3595.0" y="4428.0" />
+      <point x="3935.0" y="4428.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.SaveDataService" target="com.boxai.model.entity.DataCharts" relationship="CREATE">
+      <point x="139.0" y="-69.5" />
+      <point x="894.0" y="5508.0" />
+      <point x="1815.0" y="5508.0" />
+      <point x="0.0" y="541.5" />
+    </edge>
+    <edge source="com.boxai.controller.UserController" target="com.boxai.service.UsersService" relationship="TO_ONE">
+      <point x="0.0" y="-141.5" />
+      <point x="4715.0" y="4688.0" />
+      <point x="5415.0" y="4688.0" />
+      <point x="5415.0" y="4648.0" />
+      <point x="5886.666666666667" y="4648.0" />
+      <point x="-108.33333333333303" y="129.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostLikesServiceImpl" target="com.boxai.model.entity.PostLikes" relationship="CREATE">
+      <point x="0.0" y="-57.5" />
+      <point x="3435.0" y="4908.0" />
+      <point x="3555.0" y="4908.0" />
+      <point x="-60.0" y="205.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.PostLikesServiceImpl" target="com.boxai.mapper.PostsMapper" relationship="TO_ONE">
+      <point x="95.33333333333348" y="-57.5" />
+      <point x="3530.3333333333335" y="5388.0" />
+      <point x="5335.0" y="5388.0" />
+      <point x="5335.0" y="4708.0" />
+      <point x="5375.0" y="4708.0" />
+      <point x="5375.0" y="4628.0" />
+      <point x="5595.0" y="4628.0" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="com.boxai.config.Interceptor.TokenHandlerConfig" target="com.boxai.config.Interceptor.token.TokenInterceptorHandler" relationship="CREATE">
+      <point x="0.0" y="-57.5" />
+      <point x="0.0" y="45.5" />
+    </edge>
+    <edge source="com.boxai.service.impl.DataChartsServiceImpl" target="com.boxai.model.vo.datachart.UniversalDataChartsVO" relationship="CREATE">
+      <point x="0.0" y="-189.5" />
+      <point x="3135.0" y="6248.0" />
+      <point x="2315.0" y="6248.0" />
+      <point x="0.0" y="613.5" />
+    </edge>
+    <edge source="com.boxai.controller.LikeController" target="com.boxai.service.PostLikesService" relationship="TO_ONE">
+      <point x="-71.25" y="-45.5" />
+      <point x="2563.75" y="4928.0" />
+      <point x="2295.0" y="4928.0" />
+      <point x="-80.0" y="43.5" />
+    </edge>
+  </edges>
+  <settings layout="分层紧凑" zoom="0.10026737967914438" showDependencies="true" x="3542.5" y="3352.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>内部类</Category>
+    <Category>字段</Category>
+    <Category>属性</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
