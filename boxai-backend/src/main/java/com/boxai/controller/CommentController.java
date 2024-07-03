@@ -6,15 +6,17 @@ import com.boxai.exception.customize.CustomizeReturnException;
 import com.boxai.model.dto.postcomment.CommentAddDTO;
 import com.boxai.model.dto.postcomment.CommentDeleteDTO;
 import com.boxai.model.dto.postfavorite.FavoriteAddDTO;
+import com.boxai.model.entity.PostComments;
 import com.boxai.service.PostCommentsService;
 import com.boxai.service.PostLikesService;
 import com.boxai.utils.threadlocal.UserHolder;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/comment")
@@ -22,6 +24,41 @@ public class CommentController {
 
     @Resource
    private PostCommentsService postCommentsService;
+//    @GetMapping("/list")
+//    public R getCommentList(@RequestParam("postId") Long postId) {
+//        List<PostComments> list = PostCommentsService.getCommentList(postId);
+//        Long total = PostCommentsService.getCommentListTotal(postId);
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("commentList", list);
+//        map.put("total", total);
+//        return R.ok(map);
+//    }
+
+//    /**
+//     * 添加评论
+//     *
+//     * @param comment
+//     * @return
+//     */
+//    @PostMapping("/add")
+//    public R addComment(@RequestBody PostComments comment) {
+//        if (PostCommentsService.save(comment))
+//            return R.ok("评论成功");
+//        return R.fail("评论失败");
+//    }
+//
+//    /**
+//     * 删除评论
+//     *
+//     * @param comm
+//     * @return
+//     */
+//    @DeleteMapping("/delete")
+//    public R deleteComment(@RequestBody PostComments comm) {
+//        if (PostCommentsService.removeComment(comm))
+//            return R.ok("删除评论成功");
+//        return R.fail("删除评论失败");
+//    }
 // 添加评论
     @PostMapping("/add")
     public R<Boolean> doComment(@RequestBody CommentAddDTO commentAddDTO) {

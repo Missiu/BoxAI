@@ -20,6 +20,7 @@ public class CommentAddDTO implements Serializable{
      */
 
     private String comments;
+//    private String commentText;
     /**
      * 父级评论 id
      */

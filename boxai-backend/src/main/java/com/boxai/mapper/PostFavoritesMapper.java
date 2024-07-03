@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity generator.entity.PostFavorites
 */
 public interface PostFavoritesMapper extends BaseMapper<PostFavorites> {
-    Long selectByPostIdAndUserId (Long postId, Long userId);
+    PostFavorites selectByPostIdAndUserId (Long postId, Long userId);
 }
 
 

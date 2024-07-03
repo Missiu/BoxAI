@@ -128,6 +128,8 @@ CREATE TABLE IF NOT EXISTS post_comments
     id           BIGINT AUTO_INCREMENT COMMENT '评论ID' PRIMARY KEY,
     post_id      BIGINT                                                           NOT NULL COMMENT '结果ID',
     user_id      BIGINT                                                           NOT NULL COMMENT '创建用户ID',
+    parent_id      BIGINT                                                           NOT NULL COMMENT '父ID',
+    root_parent_id      BIGINT                                                           NOT NULL COMMENT '根结点ID',
     comment_text VARCHAR(1020)                                                    NOT NULL COMMENT '评论内容',
     create_time  DATETIME   DEFAULT CURRENT_TIMESTAMP                             NOT NULL COMMENT '创建时间',
     update_time  DATETIME   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL COMMENT '更新时间',
@@ -152,3 +154,8 @@ alter table post_comments
 
 alter table post_comments
     change rootParentId root_parent_id  bigint null;
+
+
+
+
+

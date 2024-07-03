@@ -46,11 +46,13 @@ public class PostCommentsServiceImpl extends ServiceImpl<PostCommentsMapper, Pos
 
     @Override
     public Boolean deleteComment(CommentDeleteDTO commentDeleteDTO) {
-        List<Integer> commentIds = new ArrayList<>();
-        commentIds.add(commentDeleteDTO.getCommentId());
-        roleIds.forEach(roleId -> {
-        }
-        return null;
+        List<Long> commentIds = new ArrayList<>();
+        Long postId = commentDeleteDTO.getPostId();
+        Long userId = commentDeleteDTO.getUserId();
+        Long Id = commentDeleteDTO.getId();
+        commentIds.addAll(postCommentsMapper.selectByPostIdAndUserIdAndParentId(postId, userId, Id));
+        int result=postCommentsMapper.deleteByIds(commentIds);
+        return result > 0;
     }
 }
 
