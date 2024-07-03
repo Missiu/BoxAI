@@ -19,8 +19,12 @@ import java.util.List;
 */
 public interface PostCommentsMapper extends BaseMapper<PostComments> {
     List<Long> selectByPostIdAndUserIdAndParentId (Long postId, Long userId, Long Id);
-    public int deleteByIds(List<Long> commentIds);
+    int deleteByIds(List<Long> commentIds);
 
+
+    List<PostComments> getCommentList(Long postId);
+
+    Long getCommentListTotal(Long postId);
 }
 
 

@@ -35,7 +35,12 @@
           and user_id = #{userId,jdbcType=BIGINT}
           and parent_id = #{Id,jdbcType=BIGINT}
     </select>
-
+    <select id="getCommentList" resultType="com.boxai.model.entity.PostComments">
+        SELECT * FROM post_comments WHERE post_id = #{postId and is_delete = 0}
+    </select>
+    <select id="getCommentListTotal" resultType="java.lang.Long">
+        SELECT COUNT(*) FROM post_comments WHERE post_id = #{postId}
+    </select>
 
 
 </mapper>

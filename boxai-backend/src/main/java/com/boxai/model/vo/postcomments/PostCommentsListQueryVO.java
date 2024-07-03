@@ -69,7 +69,7 @@ public class PostCommentsListQueryVO implements Serializable {
     /**
      *子评论
      */
-    private List<PostComments> child;
+    private List<PostCommentsListQueryVO> child;
     /**
      * 用户昵称
      */
