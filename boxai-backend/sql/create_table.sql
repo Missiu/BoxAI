@@ -123,6 +123,7 @@ CREATE TABLE IF NOT EXISTS post_favorites
 ) COMMENT '帖子收藏信息表' COLLATE = utf8mb4_unicode_ci;
 
 -- 帖子评论表 post_comments
+-- 帖子评论表 post_comments
 CREATE TABLE IF NOT EXISTS post_comments
 (
     id           BIGINT AUTO_INCREMENT COMMENT '评论ID' PRIMARY KEY,
@@ -139,7 +140,7 @@ CREATE TABLE IF NOT EXISTS post_comments
     INDEX idx_post_comments_id_is_delete (id, is_delete),
     INDEX idx_post_comments_post_id (post_id),
     INDEX idx_post_comments_user_id (user_id)
-) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
+    ) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
 
 
 
