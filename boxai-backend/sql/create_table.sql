@@ -123,11 +123,14 @@ CREATE TABLE IF NOT EXISTS post_favorites
 ) COMMENT '帖子收藏信息表' COLLATE = utf8mb4_unicode_ci;
 
 -- 帖子评论表 post_comments
+-- 帖子评论表 post_comments
 CREATE TABLE IF NOT EXISTS post_comments
 (
     id           BIGINT AUTO_INCREMENT COMMENT '评论ID' PRIMARY KEY,
     post_id      BIGINT                                                           NOT NULL COMMENT '结果ID',
     user_id      BIGINT                                                           NOT NULL COMMENT '创建用户ID',
+    parent_id      BIGINT                                                           NOT NULL COMMENT '父ID',
+    root_parent_id      BIGINT                                                           NOT NULL COMMENT '根结点ID',
     comment_text VARCHAR(1020)                                                    NOT NULL COMMENT '评论内容',
     create_time  DATETIME   DEFAULT CURRENT_TIMESTAMP                             NOT NULL COMMENT '创建时间',
     update_time  DATETIME   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL COMMENT '更新时间',
@@ -137,5 +140,5 @@ CREATE TABLE IF NOT EXISTS post_comments
     INDEX idx_post_comments_id_is_delete (id, is_delete),
     INDEX idx_post_comments_post_id (post_id),
     INDEX idx_post_comments_user_id (user_id)
-) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
+    ) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
 
