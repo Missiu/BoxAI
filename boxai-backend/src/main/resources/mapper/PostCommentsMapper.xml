@@ -8,6 +8,8 @@
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="postId" column="post_id" jdbcType="BIGINT"/>
             <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="parentId" column="parent_id" jdbcType="BIGINT"/>
+            <result property="rootParentId" column="root_parent_id" jdbcType="BIGINT"/>
             <result property="commentText" column="comment_text" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
@@ -16,8 +18,29 @@
 
     <sql id="Base_Column_List">
         id,post_id,user_id,
-        comment_text,create_time,update_time,
+        comment_text,create_time,update_time,parent_id,root_parent_id
         is_delete
     </sql>
+    <!--    通过post_id和user_id查询评论数据-->
+    <select id="selectByPostIdAndUserIdAndParentId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from post_comments
+        where post_id = #{postId,jdbcType=BIGINT}
+        and user_id = #{userId,jdbcType=BIGINT} and parent_id = #{parentId,jdbcType=BIGINT}
+    </select>
+    <select id="getCommentList">
+      SELECT * FROM post_comments WHERE post_id = #{postId and is_delete = 0} ORDER BY create_time DESC
+    </select>
+    <select id="getCommentListTotal">
+      SELECT COUNT(*) FROM post_comments WHERE post_id = #{postId}
+    </select>
+    <insert id="save">
+       INSERT INTO post_comments ( post_id, user_id,, parent_id, root_parent_id, comment_text,create_time,update_time, is_delete)
+            VALUES ( #{postId},#{userId}, #{parentId}, #{rootParentId},#{commentText}, #{createTime}, #{updateTime} #{isDelete})
 
+    </insert>
+    <delete id="removeById">
+       DELETE FROM post_comments WHERE id = #{id}
+    </delete>
 </mapper>

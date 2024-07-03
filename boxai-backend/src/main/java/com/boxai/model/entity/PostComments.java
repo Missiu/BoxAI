@@ -4,15 +4,19 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
+
 import lombok.Data;
 
 /**
  * 帖子评论信息表
+ *
  * @TableName post_comments
  */
-@TableName(value ="post_comments")
+@TableName(value = "post_comments")
 @Data
 public class PostComments implements Serializable {
     /**
@@ -36,6 +40,17 @@ public class PostComments implements Serializable {
      */
     private String commentText;
 
+
+    /**
+     * 父评论id
+     */
+    private Long parentId;
+
+    /**
+     * 根评论id
+     */
+    private Long rootParentId;
+
     /**
      * 创建时间
      */
@@ -53,4 +68,5 @@ public class PostComments implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+    private List<PostComments> child;
 }
