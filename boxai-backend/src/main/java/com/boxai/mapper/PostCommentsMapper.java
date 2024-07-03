@@ -2,6 +2,7 @@ package com.boxai.mapper;
 
 import com.boxai.model.entity.PostComments;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.boxai.model.entity.PostFavorites;
 
 /**
 * @author Hzh
@@ -10,7 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity generator.entity.PostComments
 */
 public interface PostCommentsMapper extends BaseMapper<PostComments> {
-
+    PostFavorites selectByPostIdAndUserIdAndParentId (Long postId, Long userId, Long parentId);
 }
 
 

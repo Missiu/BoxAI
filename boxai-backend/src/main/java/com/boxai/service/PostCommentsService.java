@@ -1,5 +1,7 @@
 package com.boxai.service;
 
+import com.boxai.model.dto.postcomment.CommentAddDTO;
+import com.boxai.model.dto.postcomment.CommentDeleteDTO;
 import com.boxai.model.entity.PostComments;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface PostCommentsService extends IService<PostComments> {
 
+    Boolean addComment(CommentAddDTO commentAddDTO);
+
+    Boolean deleteComment(CommentDeleteDTO commentDeleteDTO);
 }

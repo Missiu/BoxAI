@@ -139,3 +139,16 @@ CREATE TABLE IF NOT EXISTS post_comments
     INDEX idx_post_comments_user_id (user_id)
 ) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
 
+
+
+use boxai_db;
+ALTER TABLE post_comments add COLUMN parentId BIGINT DEFAULT NULL;
+
+ALTER TABLE post_comments add COLUMN rootParentId BIGINT DEFAULT NULL;
+
+
+alter table post_comments
+    change parentId parent_id bigint null;
+
+alter table post_comments
+    change rootParentId root_parent_id  bigint null;
