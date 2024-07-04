@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boxai.mapper.AvatarMapper">
+    <insert id="insertAvatar" parameterType="com.boxai.model.entity.Users">
+        INSERT INTO boxai.avatars(fileName,avatarUrl)
+        VALUES (#{avatarName},#{avatarUrl})
+    </insert>
+</mapper>
