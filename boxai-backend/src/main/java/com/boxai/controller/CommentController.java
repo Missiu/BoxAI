@@ -1,5 +1,6 @@
 package com.boxai.controller;
 
+import com.alibaba.druid.sql.visitor.functions.If;
 import com.boxai.common.base.R;
 import com.boxai.common.base.ReturnCode;
 import com.boxai.exception.customize.CustomizeReturnException;
@@ -26,29 +27,31 @@ public class CommentController {
     @Resource
    private PostCommentsService postCommentsService;
 
-    // 获取评论列表
-    @GetMapping("/list")
-    public R getCommentList(@RequestParam("postId") Long postId) {
-        List<PostCommentsListQueryVO> list = postCommentsService.getCommentList(postId);
-        Long total = postCommentsService.getCommentListTotal(postId);
-        Map<String, Object> map = new HashMap<>();
-        map.put("commentList", list);
-        map.put("total", total);
-        return R.ok(map);
-    }
-
     // 添加评论
     @PostMapping("/add")
     public R<Boolean> doComment(@RequestBody CommentAddDTO commentAddDTO) {
         if (commentAddDTO.getPostId() <= 0) {
             throw new CustomizeReturnException(ReturnCode.REQUEST_REQUIRED_PARAMETER_IS_EMPTY);
         }
-        if (commentAddDTO.getUserId() <= 0) {
-            commentAddDTO.setUserId(UserHolder.getUser().getId());
+        if (commentAddDTO.getParentId() <= 0){
+            commentAddDTO.setParentId(0L);
         }
-
-        return R.ok( postCommentsService.addComment(commentAddDTO));
+        Boolean aBoolean = postCommentsService.addComment(commentAddDTO);
+        return R.ok(aBoolean);
     }
+
+
+    // 获取评论列表
+    @GetMapping("/list")
+    public R<List<PostCommentsListQueryVO>> getCommentList(@RequestParam("postId") Long postId) {
+        List<PostCommentsListQueryVO> list = postCommentsService.getCommentList(postId);
+        Long total = postCommentsService.getCommentListTotal(postId);
+        Map<String, Object> map = new HashMap<>();
+        map.put("commentList", list);
+        map.put("total", total);
+        return R.ok(list);
+    }
+
 
     // 删除评论
     @PostMapping("/delete")

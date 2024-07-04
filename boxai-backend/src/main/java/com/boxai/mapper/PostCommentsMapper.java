@@ -25,6 +25,8 @@ public interface PostCommentsMapper extends BaseMapper<PostComments> {
     List<PostComments> getCommentList(Long postId);
 
     Long getCommentListTotal(Long postId);
+
+    Long selectByParentId(Long parentId);
 }
 
 

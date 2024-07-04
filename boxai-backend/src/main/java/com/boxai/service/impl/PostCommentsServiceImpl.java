@@ -5,9 +5,12 @@ import com.boxai.model.dto.postcomment.CommentAddDTO;
 import com.boxai.model.dto.postcomment.CommentDeleteDTO;
 import com.boxai.model.entity.PostComments;
 import com.boxai.model.vo.postcomments.PostCommentsListQueryVO;
+import com.boxai.model.vo.user.UserInfoVO;
 import com.boxai.service.PostCommentsService;
 import com.boxai.mapper.PostCommentsMapper;
+import com.boxai.service.UsersService;
 import com.boxai.utils.CommentUtils.CommentUtils;
+import com.boxai.utils.threadlocal.UserHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,18 +29,32 @@ public class PostCommentsServiceImpl extends ServiceImpl<PostCommentsMapper, Pos
     @Autowired
     private PostCommentsMapper postCommentsMapper;
 
-
     @Override
     public Boolean addComment(CommentAddDTO commentAddDTO) {
         PostComments comments = new PostComments();
-
+        // 获取评论者的信息
+        UserInfoVO user = UserHolder.getUser();
+        Long parentId = commentAddDTO.getParentId();
+        // 如果是一级评论
+        if (parentId == 0L){
+            comments.setRootId(0L);
+            comments.setParentId(0L);
+        }else if (parentId > 0L){
+            // 如果是二级
+            Long commentId = baseMapper.selectByParentId(parentId);
+            if (commentId != null){
+                comments.setRootId(commentId);
+                comments.setParentId(commentId);
+            }else {
+                // 如果是三级以上
+                PostComments postComments = baseMapper.selectById(parentId);
+                comments.setRootId(postComments.getId());
+                comments.setParentId(parentId);
+            }
+        }
         comments.setCommentText(commentAddDTO.getComments());
-        comments.setCreateTime(new Date());
         comments.setPostId(commentAddDTO.getPostId());
-        comments.setParentId(commentAddDTO.getParentId());
-        comments.setUserId(commentAddDTO.getUserId());
-        comments.setRootParentId(commentAddDTO.getRootParentId());
-
+        comments.setUserId(user.getId());
         return postCommentsMapper.insert(comments) > 0;
     }
 
@@ -65,7 +82,7 @@ public class PostCommentsServiceImpl extends ServiceImpl<PostCommentsMapper, Pos
             vo.setParentId(postComments.getParentId());
             vo.setContent(postComments.getCommentText());
             vo.setCreateTime(postComments.getCreateTime());
-            vo.setRootParentId(postComments.getRootParentId());
+//            vo.setRootParentId(postComments.getRootParentId());
             list.add(vo);
         }
         return CommentUtils.processComments(list);

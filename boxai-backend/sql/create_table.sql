@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS users
     available_balance DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '可用余额',
     voucher_balance   DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '代金券余额',
     cash_balance      DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '现金余额',
-    role              VARCHAR(255)    DEFAULT 'user'                                                       NOT NULL COMMENT '用户角色/user/vip/自定义key',
+    role              VARCHAR(255)   DEFAULT 'user'                                                       NOT NULL COMMENT '用户角色/user/vip/自定义key',
     create_time       DATETIME       DEFAULT CURRENT_TIMESTAMP                                            NOT NULL COMMENT '创建时间',
     update_time       DATETIME       DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP                NOT NULL COMMENT '更新时间',
     is_delete         TINYINT(1)     DEFAULT FALSE                                                        NOT NULL COMMENT '是否删除',
@@ -122,15 +122,15 @@ CREATE TABLE IF NOT EXISTS post_favorites
     INDEX idx_post_favorites_user_id (user_id)
 ) COMMENT '帖子收藏信息表' COLLATE = utf8mb4_unicode_ci;
 
--- 帖子评论表 post_comments
+
 -- 帖子评论表 post_comments
 CREATE TABLE IF NOT EXISTS post_comments
 (
     id           BIGINT AUTO_INCREMENT COMMENT '评论ID' PRIMARY KEY,
     post_id      BIGINT                                                           NOT NULL COMMENT '结果ID',
     user_id      BIGINT                                                           NOT NULL COMMENT '创建用户ID',
-    parent_id      BIGINT                                                           NOT NULL COMMENT '父ID',
-    root_parent_id      BIGINT                                                           NOT NULL COMMENT '根结点ID',
+    root_id      BIGINT                                                           NOT NULL COMMENT '根节点ID',
+    parent_id    BIGINT                                                           NOT NULL COMMENT '父评论id',
     comment_text VARCHAR(1020)                                                    NOT NULL COMMENT '评论内容',
     create_time  DATETIME   DEFAULT CURRENT_TIMESTAMP                             NOT NULL COMMENT '创建时间',
     update_time  DATETIME   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL COMMENT '更新时间',
@@ -140,21 +140,9 @@ CREATE TABLE IF NOT EXISTS post_comments
     INDEX idx_post_comments_id_is_delete (id, is_delete),
     INDEX idx_post_comments_post_id (post_id),
     INDEX idx_post_comments_user_id (user_id)
-    ) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
+) COMMENT '帖子评论信息表' COLLATE = utf8mb4_unicode_ci;
 
 
-
-use boxai_db;
-ALTER TABLE post_comments add COLUMN parentId BIGINT DEFAULT NULL;
-
-ALTER TABLE post_comments add COLUMN rootParentId BIGINT DEFAULT NULL;
-
-
-alter table post_comments
-    change parentId parent_id bigint null;
-
-alter table post_comments
-    change rootParentId root_parent_id  bigint null;
 
 
 

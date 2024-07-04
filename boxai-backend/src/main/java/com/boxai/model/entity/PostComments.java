@@ -49,7 +49,7 @@ public class PostComments implements Serializable {
     /**
      * 根评论id
      */
-    private Long rootParentId;
+    private Long rootId;
 
     /**
      * 创建时间
@@ -65,6 +65,7 @@ public class PostComments implements Serializable {
      * 是否删除
      */
     private Integer isDelete;
+
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

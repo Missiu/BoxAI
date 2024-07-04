@@ -79,7 +79,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/boxai_db
     username: root
-    password: password
+    password: huzhihao
 
     type: com.alibaba.druid.pool.DruidDataSource
     # DruidCP连接池配置
@@ -135,7 +135,7 @@ spring:
       # 数据库索引
       database: 0
       # 密码（考虑是否需要密码）
-      password: root@123456
+      password: huzhihao
 
       # 连接超时时间
       timeout: 3s
@@ -172,8 +172,7 @@ redisson:
     # 数据库索引
     database: 1
     # 密码（考虑是否需要密码）
-
-    password: root@123456
+    password: huzhihao
 
     # 命令等待超时，单位：毫秒
     timeout: 3000
