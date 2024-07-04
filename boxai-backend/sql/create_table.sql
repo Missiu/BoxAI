@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS users
     profile           VARCHAR(100)   DEFAULT '暂无个人简介'                                               NULL COMMENT '用户简介',
     available_balance DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '可用余额',
     voucher_balance   DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '代金券余额',
-    cash_balance      DECIMAL(10, 2) DEFAULT 0.00                                                         NULL COMMENT '现金余额',
+    cash_balance      DECIMAL(10, 2) DEFAULT 0.00                                                          NULL COMMENT '现金余额',
     role              VARCHAR(255)    DEFAULT 'user'                                                       NOT NULL COMMENT '用户角色/user/vip/自定义key',
     create_time       DATETIME       DEFAULT CURRENT_TIMESTAMP                                            NOT NULL COMMENT '创建时间',
     update_time       DATETIME       DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP                NOT NULL COMMENT '更新时间',
